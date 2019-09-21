@@ -1,0 +1,50 @@
+syntax enable
+
+call plug#begin('~/.vim/plugged')
+
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunctio
+
+Plug 'tpope/vim-surround'
+"Fugitive Vim Github Wrapper
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'itchyny/lightline.vim'
+
+"Plug 'chiel92/vim-autoformat' disabled  since same is done by the prettier(:Autoformat)
+Plug 'crusoexia/vim-monokai'
+Plug 'junegunn/fzf'
+Plug 'Yggdroot/indentLine' "display vertical indentation lines in code 
+
+"Plug 'vim-scripts/vim-auto-save'
+
+"auto completion - start
+"Plug 'vim-syntastic/syntastic'
+"Plug 'roxma/vim-hug-neovim-rpc'
+"Plug 'roxma/nvim-yarp'
+"Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+"Plug 'neomake/neomake', { 'on': 'Neomake' }
+"Plug 'ludovicchabant/vim-gutentags'
+" end autocompletion
+
+"Javascript Plugins
+Plug 'mxw/vim-jsx'
+Plug 'moll/vim-node'
+Plug 'pangloss/vim-javascript'
+Plug 'carlitux/deoplete-ternjs'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
+
+"prettier for all file formats
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+
+" Use release branch  .  intellisense auto complte and other features
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'NLKNguyen/papercolor-theme' 
+
+"show numbers on tabs
+Plug 'mkitt/tabline.vim'
+
+call plug#end()
+

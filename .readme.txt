@@ -1,0 +1,10 @@
+ ubunty / linux mint map hjkl as arrow keys - for all operations
+
+add below key bindings to /usr/share/X11/xkb/symbols/us, before };  of the first section
+ 
+key <CAPS> { [ ISO_Level3_Shift            ] };
+
+key <AC06> { [ h, H , Left, Left           ] };
+key <AC07> { [ j, J, Down, Down            ] };
+key <AC08> { [ k, K, Up, Up                ] };
+key <AC09> { [ l, L, Right, Right          ] };
